@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8e5b6; /* Açık ahşap tonlu arka plan */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/006/550/927/large_2x/realistic-texture-pattern-of-dark-wood-background-vector.jpg"); /* Pattern varsa */
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll; /* veya fixed */
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto ;     /* Ortala */
+  background-color: rgb(250, 222, 185);
+  padding: 2rem;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.589); /* Hafif gölge: derinlik hissi */
+  border-radius: 8px;
+  text-align: center;
+  main {
+  text-align: left;
+}
+}
+
+
+/* Ana Başlık */
+.main-header h1 {
+  font-size: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #5f2d0c; /* ahşap tonlarında kahverengi */
+  letter-spacing: 4px;
+}
+
+/* Menü */
+.main-nav ul {
+  list-style-type:none;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  margin:0;
+  display:inline-flex;
+  gap: 120px;
+  font-size: 25px;
+  background-color: #6b3a1e94; 
+  border-radius: 20px;
+  
+  
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fad8b8;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 20px;
+
+}
+
+.main-nav a:hover {
+  background-color:#f8e4d2 ;  
+  color: #6b3a1e94;
+}
+
+.main-nav a.active {
+  color: #ffbd2f;
+  border-bottom: 4px solid #ffbd2f;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.432); /* Hafif gölge: derinlik hissi */
+}
+
+.blog-area {
+  margin-top: 40px;  
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.blog-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+/* Ortak görsel stili */
+.blog-section img {
+  width: 600px;
+  border-radius:100px;
+  align-self: flex-start;
+}
+
+/* Resim soldaysa: sağdan boşluk */
+.blog-section:not(.reverse) img {
+  margin-right: 120px;
+  margin-left:5%;
+}
+
+/* Resim sağdaysa: soldan boşluk */
+.blog-section.reverse img {
+  margin-left: 120px;
+  margin-right: 5%;
+}
+

@@ -101,14 +101,14 @@ body {
 
 /* Resim soldaysa: sağdan boşluk */
 .blog-section:not(.reverse) img {
-  margin-right: 120px;
-  margin-left:5%;
+  margin-right: 2%;
+  margin-left:0%;
 }
 
 /* Resim sağdaysa: soldan boşluk */
 .blog-section.reverse img {
-  margin-left: 120px;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 0%;
 }
 
 @media (max-width: 768px) {
@@ -122,6 +122,21 @@ body {
     font-size: 18px;
   }
 
+  .container {
+  
+  
+  width: 75%;
+  margin: 0% auto ;     /* Ortala */
+  background-color: rgb(250, 222, 185);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.589); /* Hafif gölge: derinlik hissi */
+  border-radius: 8px;
+  text-align: center;
+  main {
+  
+}
+}
+
+
   .blog-section {
     flex-direction: column;
     align-items: center;
@@ -129,7 +144,10 @@ body {
   }
 
   .blog-section.reverse {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    
   }
 
   .blog-section img {

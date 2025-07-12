@@ -11,9 +11,10 @@ body {
 }
 
 .container {
+  
   max-width: 1600px;
   width: 90%;
-  margin: 0 auto ;     /* Ortala */
+  margin: 0% auto  ;     /* Ortala */
   background-color: rgb(250, 222, 185);
   padding: 2rem;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.589); /* Hafif gölge: derinlik hissi */
@@ -92,8 +93,9 @@ body {
 
 /* Ortak görsel stili */
 .blog-section img {
-  width: 600px;
+  max-width: 600px;
   border-radius:100px;
+  width: 100%;
   align-self: flex-start;
 }
 
@@ -109,3 +111,41 @@ body {
   margin-right: 5%;
 }
 
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 40px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .blog-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-section.reverse {
+    flex-direction: column;
+  }
+
+  .blog-section img {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+
+  .blog-text {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .blog-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
